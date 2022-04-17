@@ -2,7 +2,11 @@ import Common from "../components/layout/common";
 import { Container, Grid, Paper, Box, Divider } from "@mui/material";
 import { styled } from "@mui/material/styles";
 import MuiContainer from '../components/main/mui/container'
-import {MyPaperOne, MyPaperTwo,MyPaperThree, MyPaperFour} from '../components/main/mui/myStyle'
+import {MyCardOne, MyCardTwo, MyCardThree, MyCardFour} from '../components/main/mui/myStyle'
+import LeftContainer from "../components/main/mui/leftContainer";
+import RightContainer from "../components/main/mui/rightContainer";
+import ContainerLayout from "../components/layout/containerLayout";
+import TemporaryDrawer from "../components/layout/leftDrawer";
 import MuiGrid from '../components/main/mui/grid'
 
 const Item = styled(Paper)(({ theme }) => ({
@@ -20,9 +24,11 @@ export default function Home() {
 
   return (
     <Common>
-      <MuiGrid customStyle={{MyPaperOne, MyPaperTwo,MyPaperThree, MyPaperFour}} />
-      <Divider />
-      <MuiContainer/>
+
+
+      <MuiGrid customStyle={{MyCardOne, MyCardTwo, MyCardThree, MyCardFour}} />
+
+
       
     </Common>
   );

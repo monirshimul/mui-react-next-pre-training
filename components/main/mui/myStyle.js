@@ -23,3 +23,31 @@ export const MyPaperOne = styled(Paper)({
     color:"#fff"
     
   })
+
+
+export const MyCardOne = styled(Paper)({
+    backgroundColor:"#C2FFF9",
+    textAlign:"center",
+    color:"#fff",
+    boxShadow:"rgba(0, 0, 0, 0.15) 0px 5px 15px 0px"
+  })
+  export const MyCardTwo = styled(Paper)({
+    backgroundColor:"#FCD2D1",
+    textAlign:"center",
+    color:"#fff",
+    boxShadow:"rgba(0, 0, 0, 0.15) 0px 5px 15px 0px"
+  })
+  export const MyCardThree = styled(Paper)({
+    backgroundColor:"#FCFFA6",
+    textAlign:"center",
+    color:"#fff",
+    boxShadow:"rgba(0, 0, 0, 0.15) 0px 5px 15px 0px"
+  })
+  
+  export const MyCardFour = styled(Paper)({
+    backgroundColor:"#D7E9F7",
+    textAlign:"center",
+    color:"#fff",
+    boxShadow:"rgba(0, 0, 0, 0.15) 0px 5px 15px 0px"
+    
+  })

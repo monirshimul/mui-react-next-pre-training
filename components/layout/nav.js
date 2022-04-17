@@ -1,10 +1,14 @@
 import React, { Fragment } from 'react'
-import Link from 'next/link'
+import Link from 'next/link';
+import TemporaryDrawer from './leftDrawer';
 const nav = () => {
   return (
     <Fragment>
         <div className="container">
-                <nav className="navbar navbar-expand-lg navbar-light">
+                <nav className="navbar navbar-expand-lg navbar-light"
+                >
+
+                    <TemporaryDrawer/>
                     <a
                         className="navbar-brand"
                         href="#"

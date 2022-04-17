@@ -1,39 +1,41 @@
 import React from "react";
 import { Grid, Box, Divider } from "@mui/material";
+import RecipeReviewCard from './card';
 const grid = ({customStyle}) => {
-    const {MyPaperOne, MyPaperTwo,MyPaperThree, MyPaperFour} = customStyle;
+    const {MyCardOne, MyCardTwo, MyCardThree, MyCardFour} = customStyle;
   return (
     <div>
       <Box sx={{ flexGrow: 1 }}>
-        <Grid container spacing={2} px={5} my={5}>
-          <Grid item xs={8}>
-            <MyPaperOne>xs=8</MyPaperOne>
+        <Grid container spacing={3} px={5} my={5}>
+          <Grid item md={8} sm={10} xs={12}>
+            <MyCardOne sx={{display:"flex", justifyContent:"space-around", padding:"20px"}}>
+              <RecipeReviewCard newImage={"/one.jpg"} text={"A"} color={"#FF7878"}/>
+              <RecipeReviewCard newImage={"/two.jpg"} text={"B"} color={"#406343"}/>
+              
+            </MyCardOne>
           </Grid>
-          <Grid item xs={4}>
-            <MyPaperTwo>xs=4</MyPaperTwo>
+          <Grid item md={4} sm={10} xs={12}>
+            <MyCardTwo sx={{display:"flex", justifyContent:"center", padding:"20px"}}>
+            <RecipeReviewCard newImage={"/three.jpg"} text={"C"} color={"#63B4B8"}/>
+            </MyCardTwo>
           </Grid>
-          <Grid item xs={4}>
-            <MyPaperThree>xs=4</MyPaperThree>
+          <Grid item md={4} sm={10} xs={12}>
+            <MyCardThree
+            sx={{display:"flex", justifyContent:"center", padding:"20px"}}
+            >
+              <RecipeReviewCard newImage={"/four.jpg"} text={"D"} color={"#316B83"}/>
+              
+            </MyCardThree>
           </Grid>
-          <Grid item xs={8}>
-            <MyPaperFour>xs=8</MyPaperFour>
+          <Grid item md={8} sm={10} xs={12}>
+            <MyCardFour
+            sx={{display:"flex", justifyContent:"space-around", padding:"20px"}}
+            >
+              <RecipeReviewCard newImage={"/five.jpg"} text={"E"} color={"#150050"}/>
+              <RecipeReviewCard newImage={"/six.jpg"} text={"F"} color={"#A45D5D"}/>
+            </MyCardFour>
           </Grid>
-        </Grid>
-        <Divider />
-        <Grid container spacing={2} px={5} my={5}>
-          <Grid item xs={6} md={8}>
-            <MyPaperFour>xs=6 md=8</MyPaperFour>
-          </Grid>
-          <Grid item xs={6} md={4}>
-            <MyPaperTwo>xs=6 md=4</MyPaperTwo>
-          </Grid>
-          <Grid item xs={6} md={4}>
-            <MyPaperOne>xs=6 md=4</MyPaperOne>
-          </Grid>
-          <Grid item xs={6} md={8}>
-            <MyPaperThree>xs=6 md=8</MyPaperThree>
-          </Grid>
-        </Grid>
+        </Grid>      
       </Box>
     </div>
   );
