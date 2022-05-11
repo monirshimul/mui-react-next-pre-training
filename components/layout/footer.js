@@ -1,12 +1,15 @@
-import React, { Fragment } from 'react'
+import React, { Fragment, useEffect } from 'react'
 import Link from 'next/link'
 const footer = () => {
+
+    
+    const year = new Date().getFullYear();
     return (
         <Fragment>
             <div className="container" >
                 <footer className={`row d-flex justify-content-around align-items-center pt-5`} >
                     <div className="col-sm-3">
-                        <p className="text-center" style={{ color: "#888", fontSize: "12px" }}>Copyright © 2021 <Link href="https://erainfotechbd.com/">ERA InfoTech Ltd.</Link></p>
+                        <p className="text-center" style={{ color: "#888", fontSize: "12px" }}>Copyright © {year} <Link href="https://erainfotechbd.com/">ERA InfoTech Ltd.</Link></p>
                     </div>
                     <div className="col-sm-4">
                         <p className="text-center" style={{ color: "#888", fontSize: "12px" }}> Help Center  | Terms  |  Privacy Policy</p>

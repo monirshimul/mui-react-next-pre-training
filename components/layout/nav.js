@@ -15,7 +15,8 @@ const nav = () => {
                         style={{
                             fontSize: "30px",
                             color: "#02475e",
-                            fontFamily: "'Rubik', sans-serif",
+                            fontFamily: "'Rubik', sans-serif"
+                            
                         }}
                     >
                         {/* <Image

@@ -15,6 +15,7 @@ function MyApp({ Component, pageProps }) {
           <meta name="description" content="Description" />
           <meta name="keywords" content="Keywords" />
           <title>React-Learn</title>
+          <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@300&family=Noto+Serif&family=Pacifico&family=Questrial&family=Quicksand&display=swap" rel="stylesheet"></link>
           <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossOrigin="anonymous" />
           <script async src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
           <script async src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>

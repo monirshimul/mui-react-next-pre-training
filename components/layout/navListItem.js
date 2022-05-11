@@ -15,8 +15,8 @@ export const navToPage = (text)=>{
             return "/gridWithOthers"
         case "Paper & Stack":
             return "/paperWithOthers" 
-        case "Card & Accordion":
-            return "/" 
+        case "Checklist Page":
+            return "/checklistPage" 
         default:
             break;
     }
@@ -34,7 +34,7 @@ export const listItemForSideBar = [
         
     },
     {
-        text: "Card & Accordion",
+        text: "Checklist Page",
         icon: <CreditScoreIcon sx={{fontSize:iconSize, color:iconColor}}/>,
         
     },
